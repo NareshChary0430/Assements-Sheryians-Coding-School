@@ -1,0 +1,170 @@
+ *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      width:100%;
+      height:100vh;
+      background:#ececec;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .container{
+      width:95%;
+      height:94vh;
+      display:flex;
+      position:relative;
+      overflow:hidden;
+      border-radius:30px;
+      box-shadow:0 10px 40px rgba(0,0,0,0.1);
+    }
+
+    .left{
+      width:62%;
+      height:100%;
+      background:#f7c600;
+      padding:50px 80px;
+      position:relative;
+    }
+
+    .right{
+      width:38%;
+      height:100%;
+      background:#f5e9c8;
+      position:relative;
+    }
+
+    .logo{
+      width:180px;
+    }
+
+    .content{
+      margin-top:120px;
+      width:550px;
+      position:relative;
+      z-index:2;
+    }
+    .sub-heading{
+      font-size:18px;
+      letter-spacing:10px;
+      font-weight:500;
+      margin-bottom:20px;
+    }
+
+    .title{
+      font-size:120px;
+      line-height:1;
+      font-weight:900;
+      margin-bottom:30px;
+    }
+
+    .description{
+      width:560px;
+      font-size:20px;
+      line-height:1.8;
+      color:#222;
+    }
+
+    .counter{
+      display:flex;
+      align-items:center;
+      gap:30px;
+      margin-top:50px;
+    }
+
+    .line{
+      width:60px;
+      height:3px;
+      background:#000;
+    }
+
+    .count-text{
+      font-size:35px;
+      font-weight:700;
+    }
+
+    .pikachu{
+      position:absolute;
+      width:600px;
+      right:100px;
+      top:120px;
+      z-index:5;
+    }
+
+    
+    .menu{
+      position:absolute;
+      top:50px;
+      right:50px;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+
+    .menu span{
+      width:45px;
+      height:4px;
+      background:#000;
+      border-radius:10px;
+    }
+
+
+    .dots{
+      position:absolute;
+      right:40px;
+      top:50%;
+      transform:translateY(-50%);
+      display:flex;
+      flex-direction:column;
+      gap:20px;
+    }
+
+    .dot{
+      width:14px;
+      height:14px;
+      border-radius:50%;
+      background:#f2bf00;
+    }
+
+    .dot.active{
+      background:#000;
+    }
+
+
+    .pokeball{
+      position:absolute;
+      width:320px;
+      height:320px;
+      border:20px solid rgba(0,0,0,0.08);
+      border-radius:50%;
+      left:-60px;
+      bottom:-120px;
+    }
+
+    .pokeball::before{
+      content:"";
+      position:absolute;
+      width:100%;
+      height:20px;
+      background:rgba(0,0,0,0.08);
+      top:50%;
+      left:0;
+      transform:translateY(-50%);
+    }
+
+    .pokeball::after{
+      content:"";
+      position:absolute;
+      width:75px;
+      height:75px;
+      border:18px solid rgba(0,0,0,0.08);
+      border-radius:50%;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+    }
