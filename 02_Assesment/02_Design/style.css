@@ -1,0 +1,253 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+   
+    background:
+        radial-gradient(circle at top,
+        #1b1208,
+        #070707 45%,
+        #000);
+
+    min-height:100vh;
+}
+
+ .hero-title{
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 30px;
+  font-size: 30px;
+}
+
+/* .divider .divider-icon{
+  height: 1px;
+  color:orange;
+  margin: 20px 0;
+} */
+
+.drinks-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.drink-card{
+    width: 280px;
+    height: 500px;
+    background: #0b0b0b;
+    border-radius: 25px;
+    text-align: center;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255,140,0,.15);
+    transition: .4s ease;
+}
+
+.drink-card:hover{
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 20px rgba(255,140,0,.3),
+        0 0 50px rgba(255,140,0,.15);
+
+    border-color: orange;
+}
+
+
+.badge{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 16px;
+    border: 1px solid orange;
+    border-radius: 999px;
+    color: orange;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.drink-card img{
+    width: 220px;
+    height: 260px;
+    object-fit:fill;
+    margin-top: 30px;
+    transition: .4s;
+}
+
+.drink-card:hover img{
+    transform: scale(1.08);
+}
+
+.drink-card h2{
+    color: white;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.drink-card p{
+    color: #888;
+    margin-top: 10px;
+}
+
+.drink-card::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:2px;
+    background:orange;
+    margin:20px auto;
+}
+
+.drink-card h3{
+    color: orange;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.chef-special{
+  margin:20px  80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px;
+    color: #fff;
+    background: #0b0b0b;
+    border-radius: 45px;
+    flex-wrap: wrap;
+    border: 1px solid rgba(255,140,0,.15);
+    transition: .4s ease;
+    position: relative;
+}
+
+.chef-special img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.chef-special:hover{
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 20px rgba(255,140,0,.3),
+        0 0 50px rgba(255,140,0,.15);
+
+    border-color: orange;
+}
+
+.chef-special span{
+    position: absolute;
+    top: 20px;
+    font-size: 18px;
+    color: orange;
+}
+
+.chef-special h2{
+  position:absolute;
+  top:60px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.chef-special #special-description{
+    position:absolute;
+    top:120px;
+    font-size: 18px;
+    color: #888;
+    max-width: 400px;
+}
+
+.chef-special button{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: orange;
+    border: 1px solid orange;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.chef-special button:hover{
+    background-color: orange;
+    color: #000;
+}
+
+.chef-special #special-details{
+    font-size: 16px;
+    color: #888;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    border-top: 1px solid rgba(255, 140, 0, 0.3);
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+
+.footer-left{
+    color: #a0a0a0;
+    font-size: 15px;
+}
+
+.footer-center{
+    display: flex;
+    gap: 40px;
+}
+
+.footer-center a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.footer-center a:hover{
+    color: orange;
+}
+
+
+.footer-right{
+    display: flex;
+    gap: 15px;
+}
+
+.footer-right a{
+    text-decoration: none;
+    color: orange;
+    width: 40px;
+    height: 40px;
+    border: 1px solid orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.footer-right a:hover{
+    background: orange;
+    color: #000;
+}
+
+.footer-right p{
+    margin-top: 7px;  
+    font-size: 18px;
+    color: #888;
+}

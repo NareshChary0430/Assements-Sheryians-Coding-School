@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    font-family:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+.navbar{
+  color: #ffffff;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000;
+}
+
+
+.navbar nav a{
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+
+.btn{
+  padding:10px 20px;
+  background-color: #121212;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.hero{
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 50px;
+}
+
+.categories{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.categories button{
+   background-color: #121212;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.categories button:hover{
+  background-color: #FD4807;
+  color: #ffffff;
+}
+
+.blog-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    padding:40px 60px;
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.card{
+    background:#111;
+    border-radius:20px;
+    overflow:hidden;
+    padding:15px;
+}
+
+.card button{
+    background-color: #974021;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 10px 10px;
+    margin-top:15px;
+  color:#FD4807;
+  
+
+}
+
+.card p{
+    color:#fff  ;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.blog-cards .time{
+  margin-top:20px;
+    color:gray;
+    font-size:14px;
+    margin-top:5px;
+}
