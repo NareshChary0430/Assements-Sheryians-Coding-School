@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insect UI</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* MAIN CONTAINER */
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            position: relative;
+        }
+
+        /* LEFT SECTION */
+
+        .left {
+            width: 50%;
+            height: 100%;
+            background: #f4f4f4;
+            position: relative;
+            padding: 45px 60px;
+        }
+
+        /* RIGHT SECTION */
+
+        .right {
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to bottom right, #b91f17, #ca2c21);
+            position: relative;
+            padding: 55px 90px;
+            color: white;
+        }
+
+        /* LEFT TOP */
+
+        .top-left {
+            display: flex;
+            align-items: center;
+            gap: 150px;
+        }
+
+        .logo {
+            font-size: 34px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #0f2f29;
+        }
+
+        /* SEARCH */
+
+        .search-box {
+            width: 360px;
+            height: 55px;
+            background: #e8e8e8;
+            border-radius: 40px;
+
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            padding: 0 25px;
+        }
+
+        .search-box input {
+            width: 100%;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 18px;
+        }
+
+        /* RIGHT NAVBAR */
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+        }
+
+        /* VERTICAL TEXT */
+
+        .vertical-text {
+            position: absolute;
+            left: -70px;
+            top: 50%;
+
+            transform: translateY(-50%) rotate(-90deg);
+
+            font-size: 85px;
+            font-family: serif;
+            color: #0f2f29;
+        }
+
+        /* DETAILS */
+
+        .details {
+            position: absolute;
+            top: 220px;
+            left: 250px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+
+        .detail {
+            width: 260px;
+            border-bottom: 1px solid #dddddd;
+            padding-bottom: 18px;
+
+            position: relative;
+        }
+
+        .detail::before {
+            content: "";
+
+            width: 10px;
+            height: 10px;
+
+            background: #c83a31;
+            border-radius: 50%;
+
+            position: absolute;
+            left: -25px;
+            top: 8px;
+        }
+
+        .detail h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #111;
+        }
+
+        .detail p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* CENTER IMAGE */
+
+        .center-image {
+            width: 420px;
+
+            position: absolute;
+            left: 50%;
+            top: 52%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        /* RIGHT CONTENT */
+
+        .content {
+            position: absolute;
+            top: 210px;
+            left: 130px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+
+        .title {
+            font-size: 82px;
+            line-height: 1;
+            font-family: serif;
+            font-weight: 500;
+        }
+
+        /* INFO SECTION */
+
+        .info {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .icon-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .bug {
+            font-size: 60px;
+        }
+
+        .line {
+            width: 1px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .stats {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            font-size: 22px;
+            line-height: 1.5;
+        }
+
+        /* PRICE */
+
+        .price {
+            font-size: 70px;
+            color: #f5d08a;
+            font-weight: bold;
+        }
+
+        /* TOGGLES */
+
+        .toggle {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            font-size: 22px;
+        }
+
+        .switch {
+            width: 48px;
+            height: 24px;
+
+            background: white;
+            border-radius: 30px;
+
+            position: relative;
+        }
+
+        .switch::before {
+            content: "";
+
+            width: 18px;
+            height: 18px;
+
+            background: #d24a40;
+            border-radius: 50%;
+
+            position: absolute;
+            left: 3px;
+            top: 3px;
+        }
+
+        /* BUTTON */
+
+        .btn {
+            width: 340px;
+            height: 78px;
+
+            border: none;
+            border-radius: 16px;
+
+            background: #e7ce97;
+
+            font-size: 28px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT SECTION -->
+
+        <div class="left">
+
+            <div class="top-left">
+
+                <div class="logo">
+                    INSECT
+                </div>
+
+                <div class="search-box">
+
+                    🔍
+
+                    <input type="text" placeholder="Search...">
+
+                </div>
+
+            </div>
+
+            <!-- VERTICAL TEXT -->
+
+            <div class="vertical-text">
+                Classification
+            </div>
+
+            <!-- DETAILS -->
+
+            <div class="details">
+
+                <div class="detail">
+                    <h3>Class:</h3>
+                    <p>Insecta</p>
+                </div>
+
+                <div class="detail">
+                    <h3>Order:</h3>
+                    <p>Coleoptera</p>
+                </div>
+
+                <div class="detail">
+                    <h3>Family:</h3>
+                    <p>Cerambycidae</p>
+                </div>
+
+                <div class="detail">
+                    <h3>Sub-Family:</h3>
+                    <p>Cerambycinae</p>
+                </div>
+
+                <div class="detail">
+                    <h3>Tribe:</h3>
+                    <p>Callichromatini</p>
+                </div>
+
+                <div class="detail">
+                    <h3>Genus:</h3>
+                    <p>Pachyteria</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SECTION -->
+
+        <div class="right">
+
+            <!-- NAVBAR -->
+
+            <div class="navbar">
+
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+            <!-- CONTENT -->
+
+            <div class="content">
+
+                <div class="title">
+                    Pachyteria <br>
+                    equestris
+                </div>
+
+                <div class="info">
+
+                    <div class="icon-box">
+
+                        <div class="bug">
+                            🪲
+                        </div>
+
+                        <div>
+                            32 mm
+                        </div>
+
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="stats">
+
+                        <div>
+                            📍 Locality: <br>
+                            Malaysia
+                        </div>
+
+                        <div>
+                            ♂ Sex: <br>
+                            Male
+                        </div>
+
+                        <div>
+                            📏 Size: <br>
+                            32 mm / 12 mm
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="price">
+                    $5.99
+                </div>
+
+                <div class="toggle">
+
+                    <div class="switch"></div>
+
+                    <div>
+                        View detailed antennae
+                    </div>
+
+                </div>
+
+                <div class="toggle">
+
+                    <div class="switch"></div>
+
+                    <div>
+                        View underside
+                    </div>
+
+                </div>
+
+                <button class="btn">
+                    Add to collection
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- CENTER IMAGE -->
+
+        <img class="center-image"
+            src="insect.png"
+            alt="insect">
+
+    </div>
+
+</body>
+
+</html>
