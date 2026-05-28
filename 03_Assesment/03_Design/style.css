@@ -1,0 +1,568 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#02070d;
+    color:white;
+    overflow-x:hidden;
+}
+
+
+
+/* ================= CONTAINER ================= */
+
+.container{
+    width:100%;
+    min-height:100vh;
+    padding:30px 50px;
+    position:relative;
+}
+
+
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo h1{
+    font-size:50px;
+    color:#00ffe1;
+}
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    font-size:14px;
+    line-height:20px;
+}
+
+.menu{
+    display:flex;
+    gap:50px;
+    list-style:none;
+}
+
+.menu li{
+    cursor:pointer;
+    color:#d8d8d8;
+    transition:0.3s;
+}
+
+.menu li:hover{
+    color:#00ffe1;
+}
+
+.nav-btn{
+    padding:15px 35px;
+    border-radius:40px;
+    border:2px solid #00ffe1;
+    background:transparent;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.nav-btn:hover{
+    background:#00ffe1;
+    color:black;
+}
+
+
+
+
+
+/* ================= HERO SECTION ================= */
+
+.hero-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+    margin-top:30px;
+}
+
+
+
+
+
+/* ================= LEFT CONTENT ================= */
+
+.left-content{
+    width:32%;
+}
+
+.left-content h3{
+    color:#00ffe1;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.left-content h1{
+    font-size:110px;
+    line-height:100px;
+    margin-bottom:30px;
+    font-weight:900;
+}
+
+.left-content h1 span{
+    color:#00ffe1;
+}
+
+.left-content h2{
+    font-size:38px;
+    margin-bottom:25px;
+    color:#d8d8d8;
+    line-height:55px;
+}
+
+.left-content p{
+    font-size:22px;
+    line-height:40px;
+    color:#9d9d9d;
+    margin-bottom:40px;
+}
+
+
+
+
+
+/* ================= HERO BUTTONS ================= */
+
+.hero-buttons{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.primary-btn{
+    width:250px;
+    height:70px;
+    border:none;
+    border-radius:15px;
+    background:#00c7a8;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.primary-btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 30px #00ffe1;
+}
+
+.play-btn{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    border:2px solid #00ffe1;
+    background:transparent;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.play-btn:hover{
+    background:#00ffe1;
+    color:black;
+}
+
+.showreel{
+    color:#d8d8d8;
+    font-size:18px;
+}
+
+
+
+
+
+/* ================= CENTER IMAGE ================= */
+
+.center-image{
+    width:38%;
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.circle-glow{
+    width:650px;
+    height:650px;
+
+    border-radius:50%;
+
+    border:4px solid #00ffe1;
+
+    position:absolute;
+
+    box-shadow:
+    0 0 30px #00ffe1,
+    0 0 80px #00ffe1,
+    0 0 120px #00ffe1;
+}
+
+.center-image img{
+    width:650px;
+
+    position:relative;
+    z-index:2;
+
+    object-fit:contain;
+
+    filter:drop-shadow(0 0 40px #00ffe1);
+}
+
+
+
+
+
+/* ================= RIGHT FEATURES ================= */
+
+.right-features{
+    width:18%;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:50px;
+}
+
+.feature-box{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.feature-icon{
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+
+    border:2px solid #00ffe1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:35px;
+
+    box-shadow:
+    0 0 10px #00ffe1,
+    0 0 30px #00ffe1;
+}
+
+.feature-text{
+    line-height:35px;
+    color:#d8d8d8;
+    font-size:18px;
+}
+
+
+
+
+
+/* ================= STATS SECTION ================= */
+
+.stats-section{
+    margin-top:60px;
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:30px;
+
+    padding:40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(255,255,255,0.03);
+
+    backdrop-filter:blur(10px);
+}
+
+.stat-box{
+    text-align:center;
+}
+
+.stat-box h1{
+    font-size:70px;
+    color:#00ffe1;
+    margin-bottom:15px;
+}
+
+.stat-box p{
+    color:#9d9d9d;
+    line-height:30px;
+    font-size:18px;
+}
+
+
+
+
+
+/* ================= PROJECT SECTION ================= */
+
+.projects-section{
+    margin-top:100px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h3{
+    color:#00ffe1;
+    margin-bottom:15px;
+    font-size:25px;
+}
+
+.section-title h1{
+    font-size:70px;
+}
+
+.section-title h1 span{
+    color:#00ffe1;
+}
+
+
+
+
+
+/* ================= PROJECT CARDS ================= */
+
+.project-cards{
+    display:flex;
+    justify-content:space-between;
+}
+
+.project-card{
+    width:32%;
+
+    background:#07141c;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(0,255,225,0.2);
+
+    transition:0.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 0 40px rgba(0,255,225,0.2);
+}
+
+.project-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:25px;
+}
+
+.project-content h2{
+    margin-bottom:20px;
+    font-size:35px;
+}
+
+.project-content p{
+    color:#9d9d9d;
+    line-height:35px;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.project-content button{
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    border:2px solid #00ffe1;
+
+    background:transparent;
+
+    color:#00ffe1;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.project-content button:hover{
+    background:#00ffe1;
+    color:black;
+}
+
+
+
+
+
+/* ================= PROCESS SECTION ================= */
+
+.process-section{
+    margin-top:100px;
+}
+
+.process-boxes{
+    display:flex;
+    justify-content:space-between;
+    margin-top:50px;
+}
+
+.process-card{
+    width:19%;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    background:#07141c;
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    transition:0.3s;
+}
+
+.process-card:hover{
+    border:1px solid #00ffe1;
+
+    transform:translateY(-10px);
+}
+
+.process-card h2{
+    color:#00ffe1;
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.process-card h3{
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.process-card p{
+    color:#9d9d9d;
+    line-height:30px;
+}
+
+
+
+
+
+/* ================= FOOTER ================= */
+
+.footer{
+    margin-top:100px;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    background:#07141c;
+
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer-left{
+    width:35%;
+}
+
+.footer-left h1{
+    font-size:60px;
+    line-height:75px;
+    margin-bottom:30px;
+}
+
+.footer-left h1 span{
+    color:#00ffe1;
+}
+
+.footer-left p{
+    color:#9d9d9d;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.footer-left button{
+    width:240px;
+    height:65px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#00c7a8;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.footer-left button:hover{
+    box-shadow:0 0 30px #00ffe1;
+}
+
+.footer-center{
+    width:25%;
+}
+
+.footer-center h2{
+    color:#00ffe1;
+    margin-bottom:25px;
+    font-size:35px;
+}
+
+.footer-center p{
+    color:#9d9d9d;
+    line-height:35px;
+    font-size:18px;
+}
+
+.footer-right{
+    width:25%;
+}
+
+.footer-right h3{
+    margin-bottom:25px;
+    font-size:28px;
+}
+
+.footer-right p{
+    margin-bottom:20px;
+    color:#9d9d9d;
+    font-size:18px;
+}
